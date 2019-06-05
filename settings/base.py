@@ -30,7 +30,7 @@ CACHES["default"]["KEY_PREFIX"] = "moderation.anthill"
 # APPLICATION_CLASS = 'moderation.apps.AnthillApplication'
 APPLICATION_NAME = 'moderation'
 APPLICATION_VERBOSE_NAME = _('Moderation')
-APPLICATION_DESCRIPTION = _('Service description')
+APPLICATION_DESCRIPTION = _('Provide user restrictions management system')
 APPLICATION_ICON_CLASS = 'icon-lock'
 APPLICATION_COLOR = 'purple'
 
