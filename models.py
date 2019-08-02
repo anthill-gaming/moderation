@@ -106,6 +106,10 @@ class ModerationAction(BaseModerationAction):
     def active(self) -> bool:
         return self.is_active and not self.finished
 
+    @active.expression
+    def active(cls) -> bool:
+        return cls.is_active and not cls.finished
+
     @classmethod
     async def moderate(cls, action_type: str, reason: str,
                        moderator: RemoteUser, user: RemoteUser,
